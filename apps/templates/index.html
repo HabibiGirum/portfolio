@@ -8,7 +8,7 @@
   <title>Habtamu's Portfolio</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{% static 'images/my-avatar.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/my-avater.png' %}">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -39,16 +39,16 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="{% static 'images/my-avatar.png' %}" alt="Habtamu Girum" width="80">
+          <img src="{% static 'images/my-avater.png' %}" alt="Habtamu Girum" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Habtamu Girum">Habtamu Girum</h1>
-          <p class="title">Developer</p>
+          <p class="title" style="color:#a88732">Developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span style="color:#a88732">Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -64,7 +64,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:habtamugirum478@gmail.com" class="contact-link">habtamugirum478@gmail.com</a>
+              <a href="mailto:habtamugirum478@gmail.com" class="contact-link" style="color:#a88732">habtamugirum478@gmail.com</a>
             </div>
           </li>
 
@@ -74,7 +74,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-              <a href="tel:+251948730766" class="contact-link">+251-948-73-07-66</a>
+              <a href="tel:+251948730766" class="contact-link" style="color:#a88732">+251-948-73-07-66</a>
             </div>
           </li>
 
@@ -83,8 +83,8 @@
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1999-03-14">March 14, 1999</time>
+              <p class="contact-title">Github</p>
+              <a href="https://github.com/HabibiGirum" class="contact-link" style="color:#a88732">Habtamu Girum</a>
             </div>
           </li>
 
@@ -94,7 +94,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Location</p>
-              <address>Ethiopia, Addis Ababa</address>
+              <address style="color:#a88732" >Ethiopia, Addis Ababa</address>
             </div>
           </li>
         </ul>
@@ -140,9 +140,9 @@
       <li class="navbar-item">
         <a href="{% url 'portfolio' %}" class="navbar-link {% if request.resolver_match.url_name == 'portfolio' %}active{% endif %}">Portfolio</a>
       </li>
-      <li class="navbar-item">
+      <!-- <li class="navbar-item">
         <a href="{% url 'blog' %}" class="navbar-link {% if request.resolver_match.url_name == 'blog' %}active{% endif %}">Blog</a>
-      </li>
+      </li> -->
       <li class="navbar-item">
         <a href="{% url 'contact' %}" class="navbar-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
       </li>
